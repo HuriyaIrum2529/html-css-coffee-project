@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    background: black;
+    box-sizing: border-box;
+
+}
+ :root{/*these are the variables that can be again declared inside any of the further sections */
+    --main-color:rgb(199, 163, 46)
+    --primary-color:rgb(64, 7, 7);
+}
+ button{ /*here we are declaring common properties of any button which will be again declared somewhere else */
+    padding: 30px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+body{
+    background: black;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+h1.logo i{
+    size: 8rem;
+    text-align: left;
+}
+h1.logo{
+    color: yellow;
+    display: flex;
+    align-items: center;
+    size: 10px;
+}
+li{
+    display: inline;
+    list-style: none;
+}
+li a{
+    padding:  10px;
+    color: white;
+    text-decoration: none;
+    
+}
+li a:hover{
+     border: 2px solid rgb(203, 237, 232);
+}
+header{
+    background: url("https://images.unsplash.com/photo-1740593022159-52ede0e8e757?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:4rem ;
+    position: relative;
+    bottom: 4rem;
+    
+
+}
+.primary-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    position: relative;
+    bottom: 2rem;
+}
+.main-btn{
+    position: relative;
+    top: 5rem;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+}
+#our-story{
+    /* height: 100vh;   */
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*can we not use center here?*/
+    align-items: center;
+}
+.img{
+    width: 400px;
+    height: 400px;
+    background: url("https://images.unsplash.com/photo-1615464637805-16154b4d5ea1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+}
+.title-style{
+    display: flex;
+    align-items: center; /*why are we using align items when we have nothing to align*/
+}
+.title{
+  font-family: "Allura", cursive;  
+  font-size: 4rem;
+  color: white;
+
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    background: white;
+    transform: translateX(-120px);  
+}
+.content-section p{
+    max-width: 500px;
+    color: white;
+    font-family:"Allura", cursive;
+    line-height: 20px;
+    margin: 20px 0px;
+}
+
+
+.lb{
+    padding: 20px;
+    background: var(--main-color);
+    color: white;
+    border: 2px solid white;
+}
+.coffee-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+}
+.img-2{
+    width: 400px;
+    height: 400px;   
+}
+
+
+.title-two{
+    font-size: 3rem;
+    color: white;
+    font-family: "Allura", cursive; 
+}
+
+
+.content-section p{
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+.coff-btn{
+    padding: 5px 10px;
+    color: white;
+    border: 2px solid white;
+}
+
+/*products start*/
+
+.products{
+    margin-top: 5rem;
+    
+    
+
+}.title-three{
+    font-size: 8rem;
+    text-decoration: underline;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    color: white;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid yellow;
+    padding: 0 20px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    border-radius:5px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    
+}
+
+.img-one{
+    background: url("https://plus.unsplash.com/premium_photo-1668970851336-6c81cc888ba7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+}
+.img-two{
+    background: url("https://images.unsplash.com/photo-1497636577773-f1231844b336?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+}
+.img-three{
+    background: url("https://plus.unsplash.com/premium_photo-1671088575920-09f2a5970574?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+}
+.card-title{
+    color: white;
+    font-family: "Allura", cursive;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+.items{
+    color: white;
+    margin: 20px 0;
+    font-family: sans-serif;
+    line-height: 45px;
+    text-decoration: underline;
+}
+
+/*products-end*/
+footer{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+}
+footer .container{
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+footer .heading-info{
+    margin-bottom: 20px;
+}
+
+footer p{
+    line-height: 25px;
+
+}
+span{
+    color: wheat;
+}
+ hr{  /*this isn't working in the file, ask chat gpt*/
+    margin-bottom: 20px;
+    border: wheat;
+    width:500px;
+    margin: 0 auto;
+}
+
+/* media queries*/
+@media only screen and (max-width:768px){
+    .main-headings,
+    primary-heading{
+    }
+    #our-story{
+        text-align: center;
+
+    }
+    #our-story .title{
+        transform: translateX(50px);
+    }
+    #our-story .line{
+        display: none;
+    }
+    .content-section{
+        text-align: center;
+    }
+
+}
+
+
+
+
+
